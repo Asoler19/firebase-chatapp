@@ -1,196 +1,140 @@
-body{
-    margin:0;
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.login-screen{
-    display: flex;
-    background-color: lightblue;
-    width: 100%;
-    height: 100%;
-    align-items: center; 
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.logo img{
-    width: 175px;
-}
-
-.label{
-    border: 2.5px solid #00B7FF;
+.login-screen {
+  display: flex;
+  background: linear-gradient(-30deg, #00B7FF 50%, lightblue 50%);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around; }
+  .login-screen .logo img {
+    width: 175px; }
+  .login-screen .label {
+    border: 2.5px solid lightblue;
     border-radius: 25px;
-    padding: 15px 70px;
-}
-
-.label:hover{
+    padding: 15px 70px; }
+  .login-screen .label:hover {
     background: #00B7FF;
-    color: white;
-}
-.chat-screen-content{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: lightblue;
-}
+    color: lightblue; }
 
-.header {
-    background-color: #000;
+.chat-screen-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: radial-gradient(white, lightblue);
+  /* Right triangle placed top left flush. */
+  /* Right triangle, left side slightly down */
+  /*Right triangle, placed bottom left side slightly in*/
+  /*Right triangle, placed bottom left side slightly in*/
+  /*Right triangle, placed bottom right side slightly in*/
+  /* Right triangle, right side slightly down*/
+  /* Right triangle placed top right flush. */
+  /* talk bubble contents */
+  /* remove webkit p margins */ }
+  .chat-screen-content .header {
     color: #fff;
     display: flex;
     font-size: 20px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
-}
-
-.header,
-.input-container  {
-background-color: #00B7FF;
+    border-radius: 5px;
+    border-bottom: .5px solid white; }
+  .chat-screen-content .header,
+  .chat-screen-content .input-container {
+    background-color: #00B7FF;
     height: 70px;
-    width: 100%;
-}
-
-
-.input-container {
+    width: 100%; }
+  .chat-screen-content .input-container {
     display: flex;
     flex-flow: row;
     width: 100%;
-    /* overflow: hidden; */
-}
-
-.input-msg{
-    margin: 10px 0px 10px 10px;
-    border: solid 1px #999;
-    width:80%;
-    border-radius: 50px;
-    font-size: 26px;
-    padding: 0px 5px;
-    height: 50px;
-    outline-style: none;
-
-}
-
-.send-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    font-size: 50px;
-    color: lightblue;
-    /* margin-right:-50%; */
-}
-
-.messages{
+    border-top: solid .5px white;
+    border-radius: 5px;
+    /* overflow: hidden; */ }
+    .chat-screen-content .input-container .input-msg {
+      margin: 10px 0px 10px 10px;
+      border: solid 1px #999;
+      width: 80%;
+      border-radius: 50px;
+      font-size: 26px;
+      padding: 0px 5px;
+      height: 50px;
+      outline-style: none; }
+    .chat-screen-content .input-container .send-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      font-size: 50px;
+      color: lightblue;
+      /* margin-right:-50%; */ }
+    .chat-screen-content .input-container .ion-paper-airplane {
+      color: lightblue; }
+  .chat-screen-content .messages {
     flex: 1;
     padding: 15px;
     overflow-y: auto;
-    font-size: 20px;
-
-}
-
-.ion-paper-airplane{
-    color: lightblue; 
-}
-.msg-div {
-    display: flex;
-    padding: 15px 0;
-    font-size: 24px; 
-    font-family: 'Montserrat', sans-serif;
-}
-
-.left {
-    flex-flow: row;
-    text-align: left; 
-}
-
-.right {
-    flex-flow: row-reverse;
-    text-align: right; 
-}
-
-.name {
-    font-size: 15px;
-    color: lightblue; 
-}
-  
-  .msg {
-    word-wrap: break-word; 
-}
-  
-  .profile-img {
-    height: 50px;
-    width: auto;
-    border-radius: 50px; 
-}
-  
-  .date {
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: lightblue; 
-}
-
-/* Scroll Bar */
-.cool-scroll-bar-17::-webkit-scrollbar-track {
+    font-size: 20px; }
+    .chat-screen-content .messages .msg-div {
+      display: flex;
+      padding: 15px 0;
+      font-size: 24px;
+      font-family: 'Montserrat', sans-serif; }
+    .chat-screen-content .messages .left {
+      flex-flow: row;
+      text-align: left; }
+    .chat-screen-content .messages .right {
+      flex-flow: row-reverse;
+      text-align: right; }
+    .chat-screen-content .messages .name {
+      font-size: 15px;
+      color: lightblue; }
+    .chat-screen-content .messages .msg {
+      word-wrap: break-word; }
+    .chat-screen-content .messages .profile-img {
+      height: 50px;
+      width: auto;
+      border-radius: 50px; }
+    .chat-screen-content .messages .date {
+      padding-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: lightblue; }
+  .chat-screen-content .cool-scroll-bar-17::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px; 
-}
-  
-  .cool-scroll-bar-17::-webkit-scrollbar {
+    border-radius: 10px; }
+  .chat-screen-content .cool-scroll-bar-17::-webkit-scrollbar {
     width: 6px;
-    background-color: rgba(0, 0, 0, 0); 
-}
-  
-  .cool-scroll-bar-17::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0); }
+  .chat-screen-content .cool-scroll-bar-17::-webkit-scrollbar-thumb {
     background-color: rgba(255, 178, 178, 0.72);
-    border-radius: 10px; 
-}
-
-/* Bubbles */
-/* container */
-.container {
-    padding: 5% 5%; 
-}
-  
-  /* CSS talk bubble */
-  .talk-bubble {
+    border-radius: 10px; }
+  .chat-screen-content .container {
+    padding: 5% 5%; }
+  .chat-screen-content .talk-bubble {
     z-index: 10;
     margin: 0px;
     display: inline-block;
     position: relative;
     width: 200px;
     height: auto;
-    background-color: #fff; 
-}
-.talk-bubble.tri-right.left-top{
-  border-radius: 10px;
-
-}
-.talk-bubble.tri-right.right-top{
-  background-color: #00B7FF;
-  border-radius: 10px;
-
-}
-  
-  .border {
-    border: 8px solid #666; 
-}
-  
-  .round {
+    background-color: #fff; }
+  .chat-screen-content .talk-bubble.tri-right.left-top {
+    border-radius: 10px; }
+  .chat-screen-content .talk-bubble.tri-right.right-top {
+    background-color: #00B7FF;
+    border-radius: 10px; }
+  .chat-screen-content .border {
+    border: 8px solid #666; }
+  .chat-screen-content .round {
     border-radius: 30px;
     -webkit-border-radius: 30px;
-    -moz-border-radius: 30px; 
-}
- 
-/* Right triangle placed top left flush. */
-.tri-right.border.left-top:before {
+    -moz-border-radius: 30px; }
+  .chat-screen-content .tri-right.border.left-top:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -201,8 +145,7 @@ background-color: #00B7FF;
     bottom: auto;
     border: 32px solid;
     border-color: #666 transparent transparent transparent; }
-  
-  .tri-right.left-top:after {
+  .chat-screen-content .tri-right.left-top:after {
     z-index: -1;
     content: ' ';
     position: absolute;
@@ -213,12 +156,8 @@ background-color: #00B7FF;
     top: 0px;
     bottom: auto;
     border: 22px solid;
-    border-color: #fff transparent transparent transparent;
-
-  }
-  
-  /* Right triangle, left side slightly down */
-  .tri-right.border.left-in:before {
+    border-color: #fff transparent transparent transparent; }
+  .chat-screen-content .tri-right.border.left-in:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -229,8 +168,7 @@ background-color: #00B7FF;
     bottom: auto;
     border: 20px solid;
     border-color: #666 #666 transparent transparent; }
-  
-  .tri-right.left-in:after {
+  .chat-screen-content .tri-right.left-in:after {
     content: ' ';
     position: absolute;
     width: 0;
@@ -240,12 +178,8 @@ background-color: #00B7FF;
     top: 38px;
     bottom: auto;
     border: 12px solid;
-    border-color: #fff #fff transparent transparent; 
-
-  }
-  
-  /*Right triangle, placed bottom left side slightly in*/
-  .tri-right.border.btm-left:before {
+    border-color: #fff #fff transparent transparent; }
+  .chat-screen-content .tri-right.border.btm-left:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -256,8 +190,7 @@ background-color: #00B7FF;
     bottom: -40px;
     border: 32px solid;
     border-color: transparent transparent transparent #666; }
-  
-  .tri-right.btm-left:after {
+  .chat-screen-content .tri-right.btm-left:after {
     content: ' ';
     position: absolute;
     width: 0;
@@ -268,9 +201,7 @@ background-color: #00B7FF;
     bottom: -20px;
     border: 22px solid;
     border-color: transparent transparent transparent #fff; }
-  
-  /*Right triangle, placed bottom left side slightly in*/
-  .tri-right.border.btm-left-in:before {
+  .chat-screen-content .tri-right.border.btm-left-in:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -281,8 +212,7 @@ background-color: #00B7FF;
     bottom: -40px;
     border: 20px solid;
     border-color: #666 transparent transparent #666; }
-  
-  .tri-right.btm-left-in:after {
+  .chat-screen-content .tri-right.btm-left-in:after {
     content: ' ';
     position: absolute;
     width: 0;
@@ -293,9 +223,7 @@ background-color: #00B7FF;
     bottom: -20px;
     border: 12px solid;
     border-color: #fff transparent transparent #fff; }
-  
-  /*Right triangle, placed bottom right side slightly in*/
-  .tri-right.border.btm-right-in:before {
+  .chat-screen-content .tri-right.border.btm-right-in:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -305,8 +233,7 @@ background-color: #00B7FF;
     bottom: -40px;
     border: 20px solid;
     border-color: #666 #666 transparent transparent; }
-  
-  .tri-right.btm-right-in:after {
+  .chat-screen-content .tri-right.btm-right-in:after {
     content: ' ';
     position: absolute;
     width: 0;
@@ -316,9 +243,7 @@ background-color: #00B7FF;
     bottom: -20px;
     border: 12px solid;
     border-color: #fff #fff transparent transparent; }
-  
- 
-  .tri-right.border.btm-right:before {
+  .chat-screen-content .tri-right.border.btm-right:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -328,8 +253,7 @@ background-color: #00B7FF;
     bottom: -40px;
     border: 20px solid;
     border-color: #666 #666 transparent transparent; }
-  
-  .tri-right.btm-right:after {
+  .chat-screen-content .tri-right.btm-right:after {
     content: ' ';
     position: absolute;
     width: 0;
@@ -339,9 +263,7 @@ background-color: #00B7FF;
     bottom: -20px;
     border: 12px solid;
     border-color: #fff #fff transparent transparent; }
-  
-  /* Right triangle, right side slightly down*/
-  .tri-right.border.right-in:before {
+  .chat-screen-content .tri-right.border.right-in:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -352,8 +274,7 @@ background-color: #00B7FF;
     bottom: auto;
     border: 20px solid;
     border-color: #666 transparent transparent #666; }
-  
-  .tri-right.right-in:after {
+  .chat-screen-content .tri-right.right-in:after {
     content: ' ';
     position: absolute;
     width: 0;
@@ -364,9 +285,7 @@ background-color: #00B7FF;
     bottom: auto;
     border: 12px solid;
     border-color: #fff transparent transparent #fff; }
-  
-  /* Right triangle placed top right flush. */
-  .tri-right.border.right-top:before {
+  .chat-screen-content .tri-right.border.right-top:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -377,8 +296,7 @@ background-color: #00B7FF;
     bottom: auto;
     border: 32px solid;
     border-color: #666 transparent transparent transparent; }
-  
-  .tri-right.right-top:after {
+  .chat-screen-content .tri-right.right-top:after {
     z-index: -1;
     content: ' ';
     position: absolute;
@@ -390,15 +308,18 @@ background-color: #00B7FF;
     bottom: auto;
     border: 20px solid;
     border-color: #00B7FF transparent transparent transparent; }
-  
-  /* talk bubble contents */
-  .talktext {
+  .chat-screen-content .talktext {
     padding: 1em;
     text-align: left;
-    line-height: 1.5em;
-}
-  
-  .talktext p {
-    /* remove webkit p margins */
+    line-height: 1.5em; }
+  .chat-screen-content .talktext p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em; }
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
