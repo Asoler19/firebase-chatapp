@@ -1,6 +1,5 @@
 .login-screen {
   display: flex;
-  background: linear-gradient(-30deg, #00B7FF 50%, lightblue 50%);
   width: 100%;
   height: 100%;
   align-items: center;
@@ -9,12 +8,37 @@
   .login-screen .logo img {
     width: 175px; }
   .login-screen .label {
-    border: 2.5px solid lightblue;
+    border: 2.5px solid wheat;
     border-radius: 25px;
+    color: wheat;
+    background: rgb(216, 124, 20); 
     padding: 15px 70px; }
   .login-screen .label:hover {
-    background: #00B7FF;
-    color: lightblue; }
+    background: rgb(228, 82, 24);
+    color:white; }
+  h1{
+    font-family: 'Courgette', cursive;
+    color: wheat;
+    font-size: 50px;
+    text-shadow: 0 1px 0 rgba(0,0,0, .4);
+    line-height: .65;
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
+  .local{
+    color: Wheat;
+    font-size: 1.5em;
+    line-height: 1.5rem;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    
+    
+  }
+  .footer{
+    color: wheat;
+    text-align: center;
+}
+  
 
 .chat-screen-content {
   width: 100vw;
@@ -22,7 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: radial-gradient(white, lightblue);
+  background: wheat;
   /* Right triangle placed top left flush. */
   /* Right triangle, left side slightly down */
   /*Right triangle, placed bottom left side slightly in*/
@@ -43,7 +67,7 @@
     border-bottom: .5px solid white; }
   .chat-screen-content .header,
   .chat-screen-content .input-container {
-    background-color: #00B7FF;
+    background: rgb(216, 124, 20);
     height: 70px;
     width: 100%; }
   .chat-screen-content .input-container {
@@ -320,6 +344,9 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  background:url('http://www.wallpapers4k.us/wp-content/uploads/2017/10/freinds-background-silhouette-art-wallpaper.jpg') center no-repeat;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=style.css.map */
